@@ -228,7 +228,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 50, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="text-6xl md:text-8xl lg:text-9xl font-extralight mb-8 text-[#a2d2ff] leading-tight"
+            className="text-6xl md:text-8xl lg:text-9xl font-extralight mb-8 text-[#3a86ff] leading-tight"
             style={{ textShadow: "3px 3px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(255,255,255,0.3)" }}
           >
             Welcome to Saron Beauty
@@ -253,7 +253,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-extralight text-center text-[#a2d2ff] mb-20"
+            className="text-5xl md:text-6xl lg:text-7xl font-extralight text-center text-[#3a86ff] mb-20"
             style={{ textShadow: "3px 3px 8px rgba(0,0,0,0.4), 1px 1px 3px rgba(255,255,255,0.2)" }}
           >
             Our Services
@@ -273,7 +273,7 @@ const Home = () => {
                 className="relative group cursor-pointer"
               >
                 <Link to={service.link}>
-                  <div className="relative overflow-hidden rounded-xl shadow-2xl border-2 border-transparent group-hover:border-[#a2d2ff] transition-all duration-500">
+                  <div className="relative overflow-hidden rounded-xl shadow-2xl border-2 border-transparent group-hover:border-[#3a86ff] transition-all duration-500">
                     <img
                       src={service.image || "/placeholder.svg"}
                       alt={service.name}
@@ -281,7 +281,7 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-70 transition-all duration-500"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
-                                            <h3 className="text-[#a2d2ff] text-2xl font-extralight text-center group-hover:text-white transition-colors duration-500"
+                                            <h3 className="text-[#3a86ff] text-2xl font-extralight text-center group-hover:text-white transition-colors duration-500"
                          style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.8), 1px 1px 2px rgba(255,255,255,0.3)" }}>
                         {service.name}
                       </h3>
@@ -307,7 +307,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-5xl md:text-6xl font-extralight text-[#a2d2ff] mb-8"
+                className="text-5xl md:text-6xl font-extralight text-[#3a86ff] mb-8"
                 style={{ textShadow: "3px 3px 8px rgba(0,0,0,0.4), 1px 1px 3px rgba(255,255,255,0.2)" }}
               >
                 About Saron Beauty
@@ -352,7 +352,7 @@ const Home = () => {
       </section>
 
       {/* Analytics Section */}
-      <section className="py-20 bg-gradient-to-r from-[#a2d2ff] to-[#8ac4ff] analytics-section">
+      <section className="py-20 bg-gradient-to-r from-[#3a86ff] to-[#2a76ff] analytics-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <motion.div
@@ -393,7 +393,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-6xl font-extralight text-center text-[#a2d2ff] mb-20"
+            className="text-5xl md:text-6xl font-extralight text-center text-[#3a86ff] mb-20"
             style={{ textShadow: "3px 3px 8px rgba(0,0,0,0.4), 1px 1px 3px rgba(255,255,255,0.2)" }}
           >
             What Our Customers Say
@@ -424,7 +424,7 @@ const Home = () => {
                 <p className="text-xl text-gray-700 mb-6 italic leading-relaxed">
                   "{testimonials[currentTestimonial].comment}"
                 </p>
-                                 <p className="font-extralight text-2xl text-[#a2d2ff]"
+                                 <p className="font-extralight text-2xl text-[#3a86ff]"
                     style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.6), 1px 1px 2px rgba(255,255,255,0.3)" }}>
                   - {testimonials[currentTestimonial].name}
                 </p>
@@ -451,7 +451,7 @@ const Home = () => {
                 key={index}
                                onClick={() => setCurrentTestimonial(index)}
                className={`w-3 h-3 rounded-full transition-colors ${
-                 index === currentTestimonial ? 'bg-[#a2d2ff]' : 'bg-gray-300'
+                 index === currentTestimonial ? 'bg-[#3a86ff]' : 'bg-gray-300'
                }`}
               />
             ))}
@@ -466,7 +466,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-6xl font-extralight text-center text-[#a2d2ff] mb-20"
+            className="text-5xl md:text-6xl font-extralight text-center text-[#3a86ff] mb-20"
             style={{ textShadow: "3px 3px 8px rgba(0,0,0,0.4), 1px 1px 3px rgba(255,255,255,0.2)" }}
           >
             Contact Us
@@ -489,7 +489,7 @@ const Home = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-[#a2d2ff] focus:border-[#a2d2ff] transition-all duration-300 text-lg"
+                    className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-[#3a86ff] focus:border-[#3a86ff] transition-all duration-300 text-lg"
                     required
                   />
                 </div>
@@ -503,7 +503,7 @@ const Home = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-[#a2d2ff] focus:border-[#a2d2ff] transition-all duration-300 text-lg"
+                    className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-[#3a86ff] focus:border-[#3a86ff] transition-all duration-300 text-lg"
                     required
                   />
                 </div>
@@ -517,7 +517,7 @@ const Home = () => {
                     rows="6"
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-[#a2d2ff] focus:border-[#a2d2ff] transition-all duration-300 text-lg resize-none"
+                    className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl focus:ring-4 focus:ring-[#3a86ff] focus:border-[#3a86ff] transition-all duration-300 text-lg resize-none"
                     required
                   ></textarea>
                 </div>
@@ -525,7 +525,7 @@ const Home = () => {
                   type="submit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full bg-[#a2d2ff] text-white py-4 px-8 rounded-xl text-xl font-black hover:bg-[#8ac4ff] transition-colors duration-300 shadow-lg"
+                  className="w-full bg-[#3a86ff] text-white py-4 px-8 rounded-xl text-xl font-black hover:bg-[#2a76ff] transition-colors duration-300 shadow-lg"
                 >
                   Send Message
                 </motion.button>
@@ -540,53 +540,53 @@ const Home = () => {
               className="space-y-12"
             >
               <div>
-                                  <h3 className="text-3xl font-extralight text-[#a2d2ff] mb-8"
+                                  <h3 className="text-3xl font-extralight text-[#3a86ff] mb-8"
                      style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.5), 1px 1px 2px rgba(255,255,255,0.2)" }}>Get in Touch</h3>
                 <div className="space-y-6">
                   <div className="flex items-center">
-                                         <FaPhone className="text-[#a2d2ff] mr-6 text-2xl" />
+                                         <FaPhone className="text-[#3a86ff] mr-6 text-2xl" />
                     <span className="text-xl text-black">+251 911 234 567</span>
                   </div>
                   <div className="flex items-center">
-                                         <FaEnvelope className="text-[#a2d2ff] mr-6 text-2xl" />
+                                         <FaEnvelope className="text-[#3a86ff] mr-6 text-2xl" />
                     <span className="text-xl text-black">info@saronbeauty.com</span>
                   </div>
                   <div className="flex items-center">
-                                         <FaMapMarkerAlt className="text-[#a2d2ff] mr-6 text-2xl" />
+                                         <FaMapMarkerAlt className="text-[#3a86ff] mr-6 text-2xl" />
                     <span className="text-xl text-black">22 Tigat Building, Addis Ababa, Ethiopia</span>
                   </div>
                 </div>
               </div>
 
               <div>
-                                  <h3 className="text-3xl font-extralight text-[#a2d2ff] mb-8"
+                                  <h3 className="text-3xl font-extralight text-[#3a86ff] mb-8"
                      style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.5), 1px 1px 2px rgba(255,255,255,0.2)" }}>Follow Us</h3>
                 <div className="flex space-x-6">
                                      <motion.a 
                      href="#" 
                      whileHover={{ scale: 1.2, rotate: 5 }}
-                     className="text-4xl text-[#a2d2ff] hover:text-[#8ac4ff] transition-colors duration-300"
+                     className="text-4xl text-[#3a86ff] hover:text-[#2a76ff] transition-colors duration-300"
                    >
                      <FaFacebook />
                    </motion.a>
                                      <motion.a 
                      href="#" 
                      whileHover={{ scale: 1.2, rotate: 5 }}
-                     className="text-4xl text-[#a2d2ff] hover:text-[#8ac4ff] transition-colors duration-300"
+                     className="text-4xl text-[#3a86ff] hover:text-[#2a76ff] transition-colors duration-300"
                    >
                      <FaInstagram />
                    </motion.a>
                                      <motion.a 
                      href="#" 
                      whileHover={{ scale: 1.2, rotate: 5 }}
-                     className="text-4xl text-[#a2d2ff] hover:text-[#8ac4ff] transition-colors duration-300"
+                     className="text-4xl text-[#3a86ff] hover:text-[#2a76ff] transition-colors duration-300"
                    >
                      <FaTelegram />
                    </motion.a>
                                      <motion.a 
                      href="#" 
                      whileHover={{ scale: 1.2, rotate: 5 }}
-                     className="text-4xl text-[#a2d2ff] hover:text-[#8ac4ff] transition-colors duration-300"
+                     className="text-4xl text-[#3a86ff] hover:text-[#2a76ff] transition-colors duration-300"
                    >
                      <FaTiktok />
                    </motion.a>
@@ -595,9 +595,9 @@ const Home = () => {
 
               {/* Map */}
               <div>
-                                  <h3 className="text-3xl font-extralight text-[#a2d2ff] mb-8"
+                                  <h3 className="text-3xl font-extralight text-[#3a86ff] mb-8"
                      style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.5), 1px 1px 2px rgba(255,255,255,0.2)" }}>Location</h3>
-                                  <div className="h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-[#a2d2ff]">
+                                  <div className="h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-[#3a86ff]">
                   <MapContainer
                     center={[9.145, 38.7636]}
                     zoom={15}
@@ -610,7 +610,7 @@ const Home = () => {
                     <Marker position={[9.145, 38.7636]}>
                       <Popup>
                         <div className="text-center">
-                          <h3 className="font-extralight text-[#a2d2ff]"
+                          <h3 className="font-extralight text-[#3a86ff]"
                             style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>Saron Beauty Salon</h3>
                           <p>22 Tigat Building, Addis Ababa, Ethiopia</p>
                         </div>
